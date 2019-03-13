@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Self Information</title>
+	<meta charset="UTF-8">
+	<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: #ccc;
+  padding: 20px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; 
+}
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>About Me</h2>
+</header>
+<section>
+  <nav>
+    <ul>
+      <li><a href="Basic Information.html">Basic Information</a></li>
+      <li><a href="school.html">School</a></li>
+      <li><a href="photo.html">Photo</a></li>
+    </ul>
+  </nav>
+  <article>
+    <h1>我的照片</h1>
+    <img src="https://scontent-hkg3-2.xx.fbcdn.net/v/t1.0-9/44852268_1654215528013603_6975785027741155328_n.jpg?_nc_cat=109&_nc_ht=scontent-hkg3-2.xx&oh=dacaa1174c6238787e17e4e80c11b842&oe=5CDDEA0F" width="200" height="200">
+  </article>
+</section>
+
+</body>
+</html>
