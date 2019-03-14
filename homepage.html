@@ -2,12 +2,37 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Self Information</title>
+  <title>My Website</title>
   <meta charset="UTF-8">
   <style>
 * {
   box-sizing: border-box;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: lightblue;
+  color: black;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -20,8 +45,8 @@ header {
 }
 nav {
   float: left;
-  width: 30%;
-  height: 300px; 
+  width: 20%;
+  height: 1000px; 
   background: #ccc;
   padding: 20px;
 }
@@ -32,9 +57,10 @@ nav ul {
 article {
   float: left;
   padding: 20px;
-  width: 70%;
+  width: 80%;
   background-color: #f1f1f1;
-  height: 300px; 
+  height: 1000px;
+  text-align: center;
 }
 section:after {
   content: "";
@@ -59,21 +85,22 @@ footer {
 <body>
 
 <header>
-  <h2>About Me</h2>
+  <h2>About Karen Chiu</h2>
 </header>
 <div style="overflow:auto">
 <section>
   <nav>
+    <h2>Catalog</h2>
     <ul>
-      <li><a href="basic information.html">Basic Information</a></li>
+      <li><a class="active" href="homepage.html">Home</a></li>
+      <li><a href="basic_information.html">Basic Information</a></li>
       <li><a href="school.html">School</a></li>
       <li><a href="photo.html">Photo</a></li>
     </ul>
   </nav>
   <article>
-    <h1>Hello!</h1>
-    <p>姓名：邱可人</p>
-    <p>學號：B10633004</p>
+    <h2>Welcome to my website!</h2>
+    <h3>Click the catalog to know more about me!</h3>
   </article>
 </section>
 </div>

@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Self Information</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Website</title>
 	<meta charset="UTF-8">
 	<style>
 * {
   box-sizing: border-box;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: lightblue;
+  color: black;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,8 +45,8 @@ header {
 }
 nav {
   float: left;
-  width: 30%;
-  height: 300px; 
+  width: 20%;
+  height: 1000px; 
   background: #ccc;
   padding: 20px;
 }
@@ -31,9 +57,9 @@ nav ul {
 article {
   float: left;
   padding: 20px;
-  width: 70%;
+  width: 80%;
   background-color: #f1f1f1;
-  height: 300px; 
+  height: 1000px; 
 }
 section:after {
   content: "";
@@ -52,25 +78,39 @@ footer {
     height: auto;
   }
 }
+
+img {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+img:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
 </style>
 </head>
 
 <body>
 
 <header>
-  <h2>About Me</h2>
+  <h2>My Photo</h2>
 </header>
 <section>
   <nav>
+    <h2>Catalog</h2>
     <ul>
-      <li><a href="basic information.html">Basic Information</a></li>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="basic_information.html">Basic Information</a></li>
       <li><a href="school.html">School</a></li>
-      <li><a href="photo.html">Photo</a></li>
+      <li><a class="active" href="photo.html">Photo</a></li>
     </ul>
   </nav>
   <article>
-    <h1>我的照片</h1>
-    <img src="https://scontent-hkg3-2.xx.fbcdn.net/v/t1.0-9/44852268_1654215528013603_6975785027741155328_n.jpg?_nc_cat=109&_nc_ht=scontent-hkg3-2.xx&oh=dacaa1174c6238787e17e4e80c11b842&oe=5CDDEA0F" width="200" height="200">
+    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/20882765_1159007834201044_5518884995705574036_n.jpg?_nc_cat=111&_nc_ht=scontent-tpe1-1.xx&oh=9da8b0d652b81d90b919219582d5044f&oe=5D24EF09" width="400" height="400">
+    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/22688351_1218113828290444_5179248917614253582_n.jpg?_nc_cat=100&_nc_ht=scontent-tpe1-1.xx&oh=ab51a1f52a7e56c321526f56983dd2cd&oe=5D191788" width="400" height="400">
+    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/19511493_1113342438767584_7312881389885666244_n.jpg?_nc_cat=107&_nc_ht=scontent-tpe1-1.xx&oh=6ca8c4862570704f4935185bbed6180a&oe=5D123F18" width="400" height="400">
+    <img src="https://scontent-hkg3-2.xx.fbcdn.net/v/t1.0-9/44852268_1654215528013603_6975785027741155328_n.jpg?_nc_cat=109&_nc_ht=scontent-hkg3-2.xx&oh=dacaa1174c6238787e17e4e80c11b842&oe=5CDDEA0F" width="400" height="400" style="width:auto;">
   </article>
 </section>
 
